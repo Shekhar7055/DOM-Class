@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+        <script>
+                const div = document.createElement('div')
+                console.log(div);
+                div.id='id'
+                div.className='name'
+                div.setAttribute('title','title added')
+                div.style.color='blue'
+                div.style.backgroundColor= 'auqa'
+                div.innerText="Helo Coding World"
+
+
+                const addText = document.createTextNode("Heloo Coding World")
+                console.log(addText);
+
+                div.append(addText)  // append means add text//
+
+                document.body.append(div)
+
+
+
+                const para = document.createElement("p")
+                //console.log(para);
+                para.className="class"
+                para.style.color = 'green'
+                //div.innerText ="Lorem, ipsum dolor.lorem ipsum dolor sit."
+
+                const addText1 = document.createTextNode("Lorem, ipsum dolor.lorem ipsum dolor sit.")
+                //console.log(addText);
+
+                para.append(addText1)
+
+                document.body.append(para)
+        </script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "Count">
+        <div class = "Count1">One</div>
+        <div class = "Count2">Two</div>
+        <div class = "Count3">Three</div>
+        <div class = "Count4">Four</div>
+    </div>
+</body>
+    <script>
+        const Count =document.querySelector('.Count');
+        console.log(Count);
+        console.log(Count.children);
+        console.log(Count.children[0]);
+        console.log(Count.children[1]);
+        console.log(Count.children[3].innerHTML);
+        for(let i=0;i<Count.children.length; i++){
+            console.log(Count.children[i].innerHTML);
+        }
+            Count.children[1].style.color="Blue"
+            Count.children[3].style.color="Red"
+
+            console.log(Count.firstElementChild);
+            console.log(Count.lastElementChild);
+
+            const C = document.querySelector('.Count1');
+            console.log(C);
+            console.log(C.Count);
+
+            console.log(C.nextElementSibling);
+
+            console.log("NODES :", Count.childNodes)
+    </script>
+
+</html>
